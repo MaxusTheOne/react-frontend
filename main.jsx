@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Script from "./script.jsx";
+import App from "./src/app";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Script />
+    <App />
   </React.StrictMode>
 );

@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(https://png.pngtree.com/background/20211217/original/pngtree-note-music-logo-watercolor-background-picture-image_1589075.jpg);
+  background-repeat: repeat;
+}
+
+.hide {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+/* GRID */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  padding: 1em;
+}
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.grid-item-artist {
+  box-shadow: 1px 1px 8px;
+  padding: 0.85em;
+  background-color: #8ecddd;
+  transition: 0.5s;
+  animation: fadeIn 0.5s;
+  border-radius: 1em;
+}
+
+.grid-item-artist:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+.grid-item-artist-img {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.filter-grid {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.sort {
+  border: 2px solid black;
+  margin-left: 0;
+  background-color: #67a6dd;
+}
+
+/* Header */
+header {
+  display: flex;
+  width: 100%;
+  height: 3.1875rem;
+  padding: 1rem 0rem 1rem 0rem;
+  border-width: 0 0 2rem 0;
+  align-items: center;
+  /*  */
+  background: #3906ca;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+header img {
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  flex-shrink: 0;
+  border-radius: 8rem;
+  background: url(Vinyl.png);
+}
+h2,
+p {
+  text-align: center;
+}
+/* Option grid */
+.optionBtn {
+  display: flex;
+  height: 2rem;
+  padding: 0.75rem 1.9375rem 0.6875rem 1.0625rem;
+  align-items: center;
+}
+.optionSelected {
+  border: 4px solid #0c8311;
+  border-radius: 0.25rem;
+}
+#create-artist-button {
+  margin-left: 5px;
+  border-radius: 0.25rem;
+  border: 2px solid #000;
+  background: #666cff;
+}
+#sortGrid {
+  display: flex;
+  align-items: center;
+}
+#sortBy {
+  padding: 0;
+}
+
+/* SEARCH */
+.option-grid {
+  display: flex;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  display: inline-flex;
+  height: 2rem;
+  width: 100%;
+  align-items: flex-start;
+  gap: 1.625rem;
+  flex-shrink: 0;
+  border-bottom: 2px solid #000;
+}
+
+#searchbar {
+  margin: 0em auto;
+  width: 100%;
+  max-width: 350px;
+  padding: 0.5em;
+  border: 2px solid black;
+}
+
+/* DETAIL DIALOG STYLING */
+.detail-dialog-img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+#detail-dialog {
+  background-color: lightblue;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 80vh;
+  max-height: 80vh;
+  padding: 20px;
+  border: 10px solid lightskyblue;
+  border-radius: 15px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.crud-button-container {
+  position: absolute;
+  top: 10px;
+}
+
+/* BUTTON STYLING */
+
+.clickable {
+  background-color: rgb(173, 195, 230);
+  border: none;
+  border-radius: 10px;
+}
+
+.clickable:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+/* ADD NEW DIALOG STYLIGN */
+
+#input-add-artist {
+  display: grid;
+  gap: 10px;
+  font-size: 14px;
+}
+
+#input-in-addNewTrack {
+  display: grid;
+  gap: 5px;
+  font-size: 14px;
+}
+
+#input-in-addNewAlbum {
+  display: grid;
+  gap: 5px;
+  font-size: 14px;
+}
+
+#input-musicData-addArtist {
+  display: grid;
+  gap: 10px;
+  font-size: 14px;
+}
+
+#addTracks-newArtist {
+  display: grid;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.album-item:hover {
+  cursor: default;
+  transform: none;
+}
+
+.track-item:hover {
+  cursor: default;
+  transform: none;
+}
+
+.edit {
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+input {
+  background-color: lightgray;
+}
